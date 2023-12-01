@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ABC Consultant</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <div class="personal-info">
+                    <h2>Germán Jurado</h2>
+                    <div class="email">
+                        <img src="email.svg" width="30px">
+                        <h6>gjurado@gmail.com</h6>
+                    </div>
+                    <div class="phone">
+                        <img src="telephone.svg" width="20px">
+                        <h6>+1832452</h6>
+                    </div>
+                </div>
+                
+
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a href="#about-me-section" class="nav-menu-link nav-link" >About Me</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#skills-section" class="nav-menu-link nav-link">Skills</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#projects-section" class="nav-menu-link nav-link">Projects</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#recommendations-section" class="nav-menu-link nav-link">Recommendations</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="about-me" id="about-me-section">
+            <img class="photo-perfil" src="me.jpg">
+            <div class="txt">
+                <h1 class="headline">Hi, I'm Germán Jurado!</h1>
+                <p class="description">I'm a passionate Full Stack Developer eager to launch my career in the tech industry. Recently completing an intensive Full Stack Developer course with IBM, I've acquired comprehensive knowledge spanning front-end, back-end development, and cloud technologies. While lacking formal work experience, my training has equipped me to craft dynamic web applications, manage databases effectively, and harness cloud-based solutions for scalable development.</p>
+            </div>
+        </div>
+
+        <div class="skills" id="skills-section">
+            <h1>Skills</h1>
+
+            <div class="grid-container">
+                <div class="card">
+                    <img src="html.png">
+                    <h2>HTML</h2>
+                    <p>2 years experience</p>
+                </div>
+                <div class="card">
+                    <img src="JS.png">
+                    <h2>JavaScript</h2>
+                    <p>1.5 years experience</p>
+                </div>
+                <div class="card">
+                    <img src="java.png">
+                    <h2>Java</h2>
+                    <p>.5 years experience</p>
+                </div>
+                <div class="card">
+                    <img src="react.png">
+                    <h2>React</h2>
+                    <p>1 years experience</p>
+                </div>
+                <div class="card">
+                    <img src="node.png">
+                    <h2>Node.js</h2>
+                    <p>1 years experience</p>
+                </div>
+                <div class="card">
+                    <img src="css.png">
+                    <h2>css</h2>
+                    <p>2 years experience</p>
+                </div>
+                <div class="card">
+                    <img src="python.png">
+                    <h2>Python</h2>
+                    <p>1.5 years experience</p>
+                </div>
+                <div class="card">
+                    <img src="kotlin.png">
+                    <h2>Kotlin</h2>
+                    <p>1 years experience</p>
+                </div>
+                <div class="card">
+                    <img src="sql.png">
+                    <h2>SQL</h2>
+                    <p>2 years experience</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="projects" id="projects-section">
+            <h1>Projects</h1>
+        
+            <div class="vin">
+                <h2>Sign Language Recognition</h2>
+                <ul>
+                    <li>An app that interprets and translates signs into text or speech, aiding communication for the hearing impaired. It utilizes image recognition to interpret gestures.</li>
+                </ul>
+            </div>
+        
+            <div class="vin">
+                <h2>Educational Content Platform</h2>
+                <ul>
+                    <li>A platform providing diverse educational content—articles, videos—tailored to preferences, catering to students of all ages and academic levels.</li>
+                </ul>
+            </div>
+        
+            <div class="vin last-project">
+                <h2>E-commerce Store</h2>
+                <ul>
+                    <li>A comprehensive online shopping platform offering a wide range of products from electronics to fashion, featuring an intuitive purchasing process and secure payment options.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="recommendations">
+            <h1 id="recommendations-section">Recommendations</h1>
+            <div class="grid-container-recommen">
+                <div class="card-recommen">
+                    <p>"Germán stands out for his tireless dedication in every project. His meticulous approach and commitment to detail are unparalleled. He delves deep into challenges, displaying relentless determination to overcome obstacles and achieve exceptional solutions. His tireless work ethic not only inspires his colleagues but also raises the standard of excellence for the entire team. "</p>
+                </div>
+                <div class="card-recommen">
+                    <p>"Germán is truly passionate about innovation. His curious mind is always seeking new ways to tackle complex problems. Not only does he master existing technologies, but he's also constantly exploring new tools and approaches. His ability to think outside the box and willingness to try creative solutions push boundaries, constantly challenging the status quo and bringing fresh ideas to the team. "</p>
+                </div>
+                <div class="card-recommen">
+                    <p>"Germán is not just a talented developer but also an outstanding collaborator. His ability to communicate effectively and work as part of a team is admirable. He's always willing to provide support, share his knowledge, and collaborate closely with team members. His positive attitude and ability to motivate others make him an invaluable asset to any project. "</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="form-box">
+                <h2>Leave a Recommendation</h2>
+                <form>
+                    <input type="text" id="name" placeholder="Name (optional)">
+                    <textarea type="text" id="message" placeholder="Message"></textarea> 
+                    <button type="submit" onclick="addRecommendation(event)">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="scroll-to-top">
+            <a href="#top">
+                <img src="arrow-up.svg" alt="scroll to Top">
+            </a>
+        </div>
+        <script src="script.js"></script>
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+              <h2>Thank you for submitting a recommendation!</h2>
+              <button onclick="closePopup()">OK</button>
+            </div>
+          </div>
+
+    </body>
+</html>
